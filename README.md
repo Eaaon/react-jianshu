@@ -29,4 +29,4 @@
 >  如有问题请直接在 Issues 中提，或者您发现问题并有非常好的解决方案，欢迎 PR 👍
 
 >  效果图
-<img src="https://github.com/Eaaon/Icon-net/blob/master/src/assets/effect-picture.JPG" width="880px" title=""  alt=""/>
+<img src="https://github.com/Eaaon/react-jianshu/tree/master/src/assets/iconfont" width="880px" title=""  alt=""/>
