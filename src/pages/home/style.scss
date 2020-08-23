@@ -1,0 +1,230 @@
+@import '../../style/mixin.scss';
+
+.home-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 960px;
+    margin: 56px auto 0;
+
+    .home-left {
+        padding-top: 30px;
+        width: 625px;
+
+        .banner-img {
+            @include wh(625px, 270px);
+        }
+    }
+
+    .home-right {
+        width: 280px;
+        margin-left: 4.16667%;
+    }
+}
+
+.topic-wrapper {
+    overflow: hidden;
+    padding: 20px 0 10px 0;
+    margin-left: -18px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.topic-item {
+    @include border(#dcdcdc, 4px);
+    @include font(14px, #000);
+    height: 32px;
+    line-height: 32px;
+    margin: 0 0 18px 18px;
+    padding-right: 10px;
+    background: #f7f7f7;
+
+    .topic-pic {
+        @include wh(32px, 32px);
+        display: block;
+        margin-right: 10px;
+    }
+}
+
+.list-item {
+    @include flex(flex-start);
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+
+    .show {
+        @include wh(150px, 100px);
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .pic {
+        @include wh(150px, 100px);
+        @include border (#f0f0f0, 4px);
+    }
+
+    .list-info {
+        flex: 1;
+
+        .title {
+            @include font(18px, #333);
+            line-height: 27px;
+            font-weight: bold;
+        }
+
+        .desc {
+            line-height: 24px;
+            font-size: 13px;
+            color: #999;
+        }
+
+        .list-footer {
+            @include flex(flex-start);
+            color: #b4b4b4;
+
+            p {
+                line-height: 14px;
+                font-size: 12px;
+            }
+
+            .iconzuanshi {
+                font-size: 14px;
+                color: #ea6f5a;
+                margin-right: 2px;
+            }
+
+            .author,
+            .comment-num {
+                margin-right: 10px;
+            }
+
+            .iconpinglun,
+            .iconaixin {
+                font-size: 12px;
+                margin-right: 4px;
+            }
+
+            .iconaixin {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+
+.load-more {
+    @include wh(100%, 40px);
+    line-height: 40px;
+    margin: 30px 0;
+    background: #a5a5a5;
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.popover-qrcode {
+    @include wh(150px, 150px);
+}
+
+.ant-popover {
+    border-radius: 6px;
+}
+
+.recommend-wrapper {
+    margin: 30px 0 0;
+    width: 280px;
+
+    .recommend-board {
+        padding-bottom: 4px;
+
+        .recommend-item {
+            @include wh(280px, 50px);
+            margin-bottom: 6px;
+
+            img {
+                @include wh(280px, 50px);
+            }
+        }
+    }
+
+    .recommend-download {
+        @include border(#f0f0f0, 6px);
+        @include flex(flex-start);
+        margin-bottom: 30px;
+        padding: 10px 22px;
+        width: 100%;
+        background-color: #fff;
+
+        .qrcode {
+            @include wh(60px, 60px);
+            opacity: .85;
+        }
+
+        .info {
+            margin-left: 7px;
+
+            .iconjiantou {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.writer-wrapper {
+    .writer-title {
+        @include flex(space-between, flex-start);
+
+        .iconxunhuan {
+            font-size: 12px;
+            margin-right: 4px;
+        }
+
+        span,
+        .page-change {
+            @include font(14px, #969696);
+        }
+    }
+
+    .writer-item {
+        @include flex(space-between, flex-start);
+        margin-top: 15px;
+
+        .writer-left {
+            @include flex(flex-start);
+
+            img {
+                @include border(#ddd, 50%);
+                @include wh(48px, 48px);
+                margin-right: 10px;
+            }
+
+            .writer-desc {
+                @include font(12px, #969696);
+                margin-top: 2px;
+            }
+        }
+
+        .writer-right {
+            @include font(13px, #42c02e);
+            margin-top: 5px;
+            padding: 0;
+            letter-spacing: 2px;
+        }
+    }
+
+    .find-more {
+        @include flex(center);
+        @include font(13px, #787878);
+        @include border(#dcdcdc, 4px);
+        margin-top: 20px;
+        padding: 7px 0;
+        width: 280px;
+        background-color: #f7f7f7;
+
+        .iconjiantou {
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,197 @@
+@import '../../style/mixin.scss';
+
+.navbar-fixed-top {
+    @include position(fixed, 0, 0);
+    @include wh(100%, 56px);
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    z-index: 100;
+
+    .header-content {
+        @include flex(space-between);
+        @include minAndMaxW(768px, 1440px);
+        margin: 0 auto;
+        height: 56px;
+
+        .header-left {
+            @include flex(flex-start);
+            flex: 1;
+
+            .logo {
+                @include wh(100px, 56px);
+                @include bg("../assets/logo.png");
+                margin-right: 9%;
+            }
+
+            .navbar-nav {
+                @include flex(flex-start);
+                flex: 1;
+
+                .home-text,
+                .download-text {
+                    @include flex(center);
+                    @include font(17px, #333);
+                    padding: 0 20px;
+                    cursor: pointer;
+                }
+
+                .home-text {
+                    color: #ea6f5a;
+
+                    .iconzhinan {
+                        margin-right: 4px;
+                        font-size: 22px;
+                    }
+                }
+
+                .download-text {
+                    .iconshoujixiazai {
+                        margin-right: 4px;
+                    }
+                }
+
+                .search-content {
+                    height: 38px;
+                    position: relative;
+
+                    .search-input {
+                        @include wh(240px, 38px);
+                        border-radius: 19px;
+                        background: #eee;
+
+                        &.focused {
+                            width: 320px;
+
+                            .icon-style {
+                                @include wh(30px, 30px);
+                                @include flex(center);
+                                background-color: #969696;
+                                border-radius: 50%;
+                                color: #fff;
+                            }
+                        }
+
+                        &.normal {
+                            .icon-style {
+                                @include wh(30px, 30px);
+                                @include flex(center);
+                                color: #969696;
+                            }
+                        }
+
+                        &.slide-enter {
+                            width: 240px;
+                            transition: all .2s ease-out;
+                        }
+
+                        &.slide-enter-active {
+                            width: 320px;
+                        }
+
+                        &.slide-exit {
+                            transition: all .2s ease-out;
+                        }
+
+                        &.slide-exit-active {
+                            width: 240px;
+                        }
+                    }
+
+                    .search-info {
+                        @include position(absolute, 50px, 0);
+                        width: 240px;
+                        padding: 10px 20px 0;
+                        box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+                        background: #fff;
+
+                        .search-info-li {
+                            @include flex(flex-start);
+                            position: relative;
+                            padding: 5px 0;
+                            cursor: pointer;
+
+                            .search-info-text {
+                                margin: 0 30px 0 10px;
+                            }
+
+                            .iconcha {
+                                position: absolute;
+                                right: 0;
+                                font-size: 14px;
+                                color: #a0a0a0;
+                            }
+                        }
+
+                    }
+                }
+
+                .ant-input-affix-wrapper>input.ant-input {
+                    background: #eee;
+                }
+
+                .focused {
+                    width: 40%;
+                }
+
+                .normal {
+                    width: 30%;
+                }
+
+                .ant-input-affix-wrapper {
+                    padding: 2px 2px 2px 20px;
+                }
+            }
+
+        }
+
+        .header-right {
+            @include flex(flex-start);
+
+            .iconAa {
+                font-size: 22px;
+                padding: 0 10px;
+            }
+
+            .pic-beta {
+                height: 25px;
+                margin: 0 12px;
+            }
+
+            .btn {
+                @include font(15px, #333);
+                padding: 6px 12px;
+                cursor: pointer;
+                vertical-align: middle;
+            }
+
+            .sign_in {
+                margin: 0 6px;
+            }
+
+            .sign_up {
+                @include wh(80px, 38px);
+                @include border(rgba(236, 97, 73, .7), 20px);
+                margin: 0 5px 0 15px;
+                color: #ea6f5a;
+            }
+
+            .write-btn {
+                @include wh(100px, 40px);
+                margin: 0 12px 0;
+                border-radius: 20px;
+                color: #fff;
+                background-color: #ea6f5a;
+                line-height: 24px;
+
+                .iconyumaobi {
+                    margin-right: 4px;
+                }
+            }
+
+
+            .focused {
+                color: #f0f;
+            }
+        }
+    }
+}

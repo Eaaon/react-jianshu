@@ -1,0 +1,38 @@
+@mixin flex($justify-content, $align-items:center) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin wh($width, $height:100%) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($font-size, $color, $text-align:center) {
+    font-size: $font-size;
+    color: $color;
+    text-align: $text-align;
+}
+
+@mixin minAndMaxW ($minW, $maxW) {
+    min-width: $minW;
+    max-width: $maxW;
+}
+
+@mixin position($position, $top, $left) {
+    position: $position;
+    top: $top;
+    left: $left;
+}
+
+@mixin bg($url, $background-size:cover) {
+    background-image: url($url);
+    background-size: $background-size;
+    background-repeat: no-repeat;
+}
+
+@mixin border($color, $radius:0px) {
+    border: 1px solid $color;
+    border-radius: $radius;
+}
