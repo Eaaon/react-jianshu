@@ -27,3 +27,6 @@
 >  或者您可以 "follow" 一下，我会不断开源更多的有趣的项目
 
 >  如有问题请直接在 Issues 中提，或者您发现问题并有非常好的解决方案，欢迎 PR 👍
+
+>  效果图
+<img src="https://github.com/Eaaon/Icon-net/blob/master/src/assets/effect-picture.JPG" width="880px" title=""  alt=""/>
